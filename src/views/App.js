@@ -4,7 +4,7 @@ import '../style/App.css';
 import Leaderboard from './Leaderboard.js';
 import React, { useState ,useEffect} from 'react';
 import greenSound from '../sounds/green.mp3';
-import blueSound from '../sounds/red.mp3';
+import blueSound from '../sounds/blue.mp3';
 import purpleSound from '../sounds/purple.mp3';
 import redSound from '../sounds/red.mp3';
 import whiteSound from '../sounds/white.mp3';
