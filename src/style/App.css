@@ -1,0 +1,195 @@
+.App{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+/* Background css */
+@keyframes rotate {
+    0% {
+                          transform: rotate(0deg);
+                      }
+                      100% {
+                          transform: rotate(360deg);
+                      }
+                  }
+                  .out-top {
+                      animation: rotate 20s linear infinite;
+                      transform-origin: 13px 25px;
+                  }
+                  .in-top {
+                      animation: rotate 10s linear infinite;
+                      transform-origin: 13px 25px;
+                  }
+                  .out-bottom {
+                      animation: rotate 25s linear infinite;
+                      transform-origin: 84px 93px;
+                  }
+                  .in-bottom {
+                      animation: rotate 15s linear infinite;
+                      transform-origin: 84px 93px;
+                  }
+
+
+body {
+  text-align: center;
+  background-color: transparent;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  3%;
+  color: #FEF2BF;
+}
+
+#level-record {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  3%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: rgb(109, 0, 0);
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.white{
+  background-color: white;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+body {
+
+  background-color:#011F3F;
+}
+svg {
+  z-index: -1; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.links {
+    z-index: -1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+a {
+  
+  text-decoration: none;
+  color: black;
+  margin-left: 1em;
+}
+a:hover {
+  text-decoration: underline;
+}
+a img.icon {
+
+  display: inline-block;
+  height: 1em;
+  margin: 0 0 -0.1em 0.3em;
+}
+
+.butn-1 {
+  display: inline-block;
+  font-family: Hack, monospace;
+  background: #FEF2BF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 40px;
+  width: 10%;
+  min-width: 100px;
+  position: relative;
+  margin-bottom: 40px;
+  /* margin-top: -200px; */
+}
+
+.butn-1::after {
+      content: '\2192';
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 400;
+      position: absolute;
+      left: 70%;
+      top: 27%;
+      right: 5%;
+      bottom: 0;
+      opacity: 0;
+
+  }
+
+.butn-1:hover {
+      background: #FEF2BF;
+      transition: all 0.5s;
+      border-radius: 30px;
+      box-shadow: 0px 6px 15px #0000ff61;
+      padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+
+  }
+
+.butn-1:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
+
+}
+
+
